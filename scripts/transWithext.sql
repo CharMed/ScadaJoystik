@@ -1,0 +1,14 @@
+update loglevprm_temperature_io set "uk#VALUE"="Відстудній давач температути" where "ID"="l10n_mess"; 
+update loglevprm_temperature_io set "ru#VALUE"="Отсутствует датчик температуры" where "ID"="l10n_mess"; 
+update flb_ivptablefrontend set "ru#FORMULA"="FORMULA" where "ID"="TableData";
+update tmplib_drogobichtemplates set "uk#PROGRAM"="PROGRAM" where "ID"="systemStatus" or "ID"="run"; 
+update tmplib_drogobichtemplates set "ru#PROGRAM"="PROGRAM" where "ID"="systemStatus" or "ID"="run";
+update tmplib_drogobichtemplates_io set "ru#VALUE"="VALUE" where "TMPL_ID"="WriteOnceRegistrs";
+update wlb_newtablefrontend set "ru#PROC"="PROC" where "ID"="chenge"; 
+update wlb_newtablefrontend set "uk#PROC"="PROC" where "ID"="chenge";
+update wlb_newtablefrontend_uio set "uk#CFG_TMPL"="CFG_TMPL" where "uk#CFG_TMPL" is null; 
+update wlb_newtablefrontend_uio set "ru#CFG_TMPL"="CFG_TMPL" where "ru#CFG_TMPL" is null; 
+update wlb_newtablefrontend_uio set "uk#CFG_VAL"="CFG_VAL" where "uk#CFG_VAL" is null; 
+update wlb_newtablefrontend_uio set "ru#CFG_VAL"="CFG_VAL" where "ru#CFG_VAL" is null;
+update wlb_newtablefrontend_uio set "uk#NAME"="NAME" where "uk#NAME" is null; 
+update wlb_newtablefrontend_uio set "ru#NAME"="NAME" where "ru#NAME" is null;
